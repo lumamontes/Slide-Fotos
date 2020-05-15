@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgba(0, 0, 0, 0.877);
+}
+
+#slide {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    margin: 80px auto;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+}
+
+#slide figure {
+    text-align: center;
+    padding: 70px;
+
+}
+#slide figure img {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    margin-left: -160px;
+    
+}
+
+#slide #voltar, #avancar {
+    z-index: 2;
+    position: absolute;
+    bottom: 190px;
+    width: 5%;
+    padding: 10px ;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.61);
+    cursor: pointer;
+}
+#slide #voltar {
+    left: 0px;
+}
+
+#slide #avancar {
+    right: 0;
+}
+
+#slide p {
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 1000px;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.61);
+}
+#slide #gg, #fb, #ig {
+    z-index: 2;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 40px;
+    border-radius: 100%;
+}
+#gg, #ig, #fb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+}
+
+
+i {
+    font-size: 25px;
+}
+
+ #ig:hover, #fb:hover {
+    background-color: rgb(55, 0, 255);
+    opacity: 95%;
+}
+
+
+#gg:hover {
+    background-color: rgb(55, 0, 255);
+}
+#gg {
+    left: 720px;
+}
+
+
+#fb {
+    
+    left: 780px;
+
+}
+
+#ig {
+    left: 840px;
+
+}
